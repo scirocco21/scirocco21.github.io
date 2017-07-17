@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "**Scraping the most popular online courses from Coursera**"
-date:   2017-07-17 17:50:55 +0000
+date:   2017-07-17 13:50:56 -0400
 ---
 
 
@@ -16,8 +16,11 @@ Eventually it would be fun to extend the app to include data from more than one 
 Another element of functionality that is missing from the app (and Coursera's list) is the option to arrange popular courses by subject. For the user interface it would be more intuitive to enter first the general area of study one is interested in, say Science or Technology, to then be given the courses assigned under that rubric. 
 
 I've kept numbers down to twenty, but if anyone wants to see a big bad list of 50 (which I'm not using in the app), check this out:
-
-http://www.onlinecoursereport.com/the-50-most-popular-moocs-of-all-time/
+[
+http://www.onlinecoursereport.com/the-50-most-popular-moocs-of-all-time/]
 
 So little time, so much to learn!
+
+https://github.com/scirocco21/popular_moocs
+
 

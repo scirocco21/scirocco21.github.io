@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Biblio: my Sinatra project and some takeaways"
-date:       2018-06-18 04:07:54 +0000
+date:       2018-06-18 00:07:54 -0400
 permalink:  biblio_my_sinatra_project_and_some_takeaways
 ---
 
@@ -12,7 +12,7 @@ Wiring up the correct associations was a bit of a challenge initially, as I assu
 
 What did the trick in the end was drawing the whole domain on a whiteboard, and later on gliffy. This is what worked for me:
 
-![](http://)https://ibb.co/mswxhy
+[![](http://)https://ibb.co/mswxhy](http://)
 
 When it came to drawing the appropriate routes and developing the views, the trickiest part was thinking about duplicate data and user permissions. If user A, for example, creates 'Don Quixote', and this book is publicly viewable, user B can then add his or her own booknote on 'Don Quixote' without having to create the book object again and there being two books with the same title and author in the database. 
 

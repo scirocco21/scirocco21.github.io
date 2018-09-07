@@ -8,7 +8,7 @@ permalink:  getting_fancy_with_particles_js
 
 A great tool for creating a visually appealing landing page is particles.js, a lightweight library that sends any number of little balls (or stars, or squares, or whatever icons take your fancy) up and down your screen. Some of the functions are really cool: particles can become 'attracted' to the cursor, or be repelled by it, for example. 
 
-![https://ibb.co/hfBjHz]
+![] (https://ibb.co/hfBjHz)
 
 Integrating particles.js into the asset pipeline is only slightly more involved than getting started with Bootstrap. However, while it is enough to include a link to the external Bootstrap files in a script tag of one's index.html, for example, this will not work with particles/js, and it (in Rails) it is easier to just download and add the relevant files to assets/javascripts. The relevant files are particles.min.js and particles.json. The json file is the one that ultimately carries all the configurations (how many particles, what shape, etc.):
 

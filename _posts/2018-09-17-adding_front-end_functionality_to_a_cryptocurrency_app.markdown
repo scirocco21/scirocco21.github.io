@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Adding front-end functionality to a cryptocurrency app"
-date:       2018-09-18 02:50:53 +0000
+date:       2018-09-17 22:50:54 -0400
 permalink:  adding_front-end_functionality_to_a_cryptocurrency_app
 ---
 

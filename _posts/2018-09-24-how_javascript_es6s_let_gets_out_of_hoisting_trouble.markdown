@@ -5,7 +5,7 @@ date:       2018-09-24 16:27:54 -0400
 permalink:  how_javascript_es6s_let_gets_out_of_hoisting_trouble
 ---
 
-### 1. Hoisting and the trouble with `var` 
+## 1. Hoisting and the trouble with `var` 
 
 Javascript is a bit weird sometimes, and one its quirks is hoisting, which refers to the practice of using a variable in your code *before*  actually declaring it. Here's an example of some odd-looking code that will work just fine:
 
@@ -60,7 +60,7 @@ function sheepCounter(n)
 	console.log(i)
 }
 ```
-### 2. Enter `lets`
+## 2. Enter `lets`
 
 With all this unintuitive and difficult to predict behaviour going on, it's easy to see how `var` can cause bugs in our code. Thankfully, Javascript's ES6 gives us a set of neat substitutes for `var`: `let` and `const`.
 
@@ -84,7 +84,7 @@ Uncaught ReferenceError: i is not defined
 ```
 And this makes perfect sense: the scope of `i` is restricted to the block in which it is declared (the `for` loop) and does not extend any further (hence it is `not defined` outside the loop). With the `var` keyword, on the other hand, the scope of the variable is the entire function, not just the block, which, as we have seen, can lead to unexpected results.
 
-### 3. Conclusion 
+## 3. Conclusion 
 
 To sum up: within functions, `let` is scoped to the level of code blocks, while `var` has function scope. In many contexts, `let` will return `not defined` where `var` will return `undefined` or some other value, as in our first example:
 
@@ -100,7 +100,7 @@ let x;
 
 Here and elsewhere, the sensible thing will be to declare either `var` or `let` before actually using it. But even with this proviso, when it comes to predictability of behaviour, `let` would seem to have the edge over `var`. 
 
-#### Resources
+### Resources
 * [Learn-Co Hoisting Readme](https://learn.co/lessons/js-hoisting-readme)
 * [W3 Schools on Hoisting](https://www.w3schools.com/js/js_hoisting.asp)
 * [MDN article on let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)

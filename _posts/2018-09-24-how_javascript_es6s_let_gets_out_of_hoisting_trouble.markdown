@@ -32,9 +32,9 @@ So far, so good. But take a look at what happens when we use `var` a little care
 ```
 function sheepCounter(n) {
   for (var i = 0; i < n; i++) {
-	   console.log(`Meeeh, I'm sheep number ${i}`)
-	}
-	console.log(i)
+	console.log(`Meeeh, I'm sheep number ${i}`)
+  }
+  console.log(i)
 }
 ```
 
@@ -53,11 +53,11 @@ Thus, even though we might intend to restrict the scope of `i ` to the `for` loo
 
 ```
 function sheepCounter(n) 
-  var i;
-  for (i = 0; i < n; i++) {
-	   console.log(`Meeeh, I'm sheep number ${i}`)
-	}
-	console.log(i)
+   var i;
+   for (i = 0; i < n; i++) {
+     console.log(`Meeeh, I'm sheep number ${i}`)
+   }
+   console.log(i)
 }
 ```
 ## 2. Enter `lets`
@@ -69,9 +69,9 @@ With all this unintuitive and difficult to predict behaviour going on, it's easy
 ```
 function sheepCounter(n) {
   for (let i = 0; i < n; i++) {
-	   console.log(`Meeeh, I'm sheep number ${i}`)
-	}
-	console.log(i)
+	console.log(`Meeeh, I'm sheep number ${i}`)
+   }
+  console.log(i)
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "How Javascript ES6's `let` gets you out of hoisting trouble"
+title:      "How Javascript ES6's `let` keyword gets you out of hoisting trouble"
 date:       2018-09-24 16:27:54 -0400
 permalink:  how_javascript_es6s_let_gets_out_of_hoisting_trouble
 ---

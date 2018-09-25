@@ -5,7 +5,7 @@ date:       2018-09-24 16:27:54 -0400
 permalink:  how_javascript_es6s_let_gets_out_of_hoisting_trouble
 ---
 
-** 1. Hoisting and the trouble with `var` **
+**1. Hoisting and the trouble with `var`**
 
 Javascript is a bit weird sometimes, and one its quirks is hoisting, which refers to the practice of using a variable in your code *before*  actually declaring it. Here's an example of some odd-looking code that will work just fine:
 
@@ -84,7 +84,7 @@ Uncaught ReferenceError: i is not defined
 ```
 And this makes perfect sense: the scope of `i` is restricted to the block in which it is declared (the `for` loop) and does not extend any further (hence it is `not defined` outside the loop). With the `var` keyword, on the other hand, the scope of the variable is the entire function, not just the block, which, as we have seen, can lead to unexpected results.
 
-** 3. Conclusion **
+**3. Conclusion**
 
 To sum up: within functions, `let` is scoped to the level of code blocks, while `var` has function scope. In many contexts, `let` will return `not defined` where `var` will return `undefined` or some other value, as in our first example:
 

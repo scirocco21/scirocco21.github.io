@@ -5,7 +5,7 @@ date:       2018-10-09 19:44:31 -0400
 permalink:  optimal_looting_with_procedural_ruby_or_the_fractional_knapsack_problem
 ---
 
-** 1. The problem**
+**1. The problem**
 
 Suppose you've reached the end of a party with loads of leftovers. You have one backpack that can carry 10kg, and you want to fill it so as to take home as many of the fanciest treats as you can (who doesn't like freebies?).  Unfortunately, there's just too much, so you can't take everything: it's either the craft beers, or the pizza slices, or the candy, or some mix of them all. What is the best procedure to follow in this case?
 
@@ -64,7 +64,7 @@ After the inner `while` loop, the main business logic of packing one's bag is en
 
 So far, this all seems good and we can test the simple solution to see whether it returns correct results. `get_optimal_value(20, [10,20,30], [60,100,40])`, for example, should return `110`, and this is indeed what we find. 
 
-However, on reflection, the simple solution is not very efficient. For a total of three items, we would, in the worst case, have to perform three times three operations to fill our bag (three times to run the whole packing function, and three times for each of those iterations to get the best item in terms of value/weight ration). How could we improve upon the simple solution?
+However, on reflection, the simple solution is not very efficient. For a total of three items, we would, in the worst case, have to perform three times three operations to fill our bag (three times to run the whole packing function, and three times for each of those iterations to get the best item in terms of value/weight ratio). How could we improve upon the simple solution?
 
 One idea might be to transform the input data into a more usable format that allows for easier and more efficient sorting. Instead of having two separate arrays, we could combine them into a dictionary, like so: 
 
@@ -84,7 +84,7 @@ end
 ```
 
 The return value of `create_hash([10,20,30], [60,100,40])`, for example, would be  `{10=>60, 20=>100, 30=>40}`
-With this -- more useful for our purposes -- data structure in hand, we can write a sorting function that will order the items by value/weight ration:
+With this -- more useful for our purposes -- data structure in hand, we can write a sorting function that will order the items by value/weight ratio:
 
 ```
 def sort_by_ratio(hash)
